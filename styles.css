@@ -1,0 +1,59 @@
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  z-index: 300;
+}
+html, body {
+  width: 100%;
+  height: 100vh;
+  color: #222222;
+  background: #1B3059;
+  overflow-x: hidden;
+}
+.flexi {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#rock {
+  display: block;
+  width: 400px;
+  max-width: calc(100% - 40px);
+  max-height: calc(100% - 20px);
+}
+#rock:active {
+  -webkit-animation: wiggle 0.2s;
+  -moz-animation: wiggle 0.2s;
+}
+.first {
+  max-width: 50%;
+  align-self: flex-start;
+}
+.last {
+  max-width: 50%;
+  align-self: flex-end;
+}
+
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform:rotate(8deg);}
+  50% {-webkit-transform:rotate(-8deg);}
+  100% {-webkit-transform:rotate(8deg);}
+}
+
+@-moz-keyframes wiggle {
+  0% {-moz-transform:rotate(8deg);}
+  50% {-moz-transform:rotate(-8deg);}
+  100% {-moz-transform:rotate(8deg);}
+}
+
+@keyframes wiggle {
+  0% {transform:rotate(8deg);}
+  50% {transform:rotate(-8deg);}
+  100% {transform:rotate(8deg);}
+}

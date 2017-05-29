@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Its A Rock Fact</title>
+
+      <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+  <body>
+    <div class="flexi">
+      <div class="first"></div>
+      <img id="rock" src="RockFact.svg">
+      <div class="last"></div>
+    </div>
+
+    <audio id="audio">
+      <source src="RockFact.mp3" type="audio/mpeg">
+    </audio>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        rock = document.getElementById("rock");
+        audio = document.getElementById("audio");
+
+        rock.addEventListener("click", function() {
+          console.log("its a rock");
+          audio.play()
+        });
+      }
+    </script>
+  </body>
+</html>
