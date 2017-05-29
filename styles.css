@@ -26,6 +26,13 @@ html, body {
   width: 400px;
   max-width: calc(100% - 40px);
   max-height: calc(100% - 20px);
+
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 #rock:active {
   -webkit-animation: wiggle 0.2s;
