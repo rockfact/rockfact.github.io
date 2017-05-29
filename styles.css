@@ -35,8 +35,8 @@ html, body {
   -ms-user-select: none;
 }
 #rock:active {
-  -webkit-animation: wiggle 0.2s;
-  -moz-animation: wiggle 0.2s;
+  -webkit-animation: wiggle 0.4s;
+  -moz-animation: wiggle 0.4s;
 }
 .first {
   max-width: 50%;
