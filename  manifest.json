@@ -1,0 +1,13 @@
+{
+  "name": "Its A Rock Fact",
+  "short_name": "Rock Fact",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#1B3059",
+  "description": "Its A Rock Fact.",
+  "icons": [{
+    "src": "icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}
