@@ -25,7 +25,13 @@ html, body {
   display: block;
   width: 400px;
   max-width: calc(100% - 40px);
+  height: 300px;
   max-height: calc(100% - 20px);
+
+  background: url(RockFact.svg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   user-drag: none; 
   user-select: none;
