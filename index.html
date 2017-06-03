@@ -30,7 +30,9 @@
 
         rock.addEventListener("click", function() {
           console.log("brought to you by rockfactsrox™");
-          audio.play()
+          audio.pause();
+          audio.currentTime = 0;
+          audio.play();
         });
 
         if ("serviceWorker" in navigator) {
